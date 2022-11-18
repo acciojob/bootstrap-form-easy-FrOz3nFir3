@@ -1,16 +1,97 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body class="shadow m-4 p-3">
+    <!-- the entire body must be written by student -->
+    <h2 class="p-4 text-center fw-bold">Internship Form</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col-4">
+          <label for="first-name-input" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="first-name-input"
+            required
+          />
+        </div>
+        <div class="col-4">
+          <label for="last-name-input" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="last-name-input"
+            required
+          />
+        </div>
+        <div class="col-4">
+          <label for="email-input" class="form-label">Email Address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email-input"
+            placeholder="xyz@abc.com"
+            required
+          />
+        </div>
+      </div>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      <div class="row mb-3">
+        <div class="col-6">
+          <label for="college-input" class="form-label">College</label>
+          <input type="text" class="form-control" id="college-input" required />
+        </div>
+        <div class="col-3">
+          <label for="graduation-year" class="form-label"
+            >Graduation Year</label
+          >
+          <select
+            class="form-select"
+            id="graduation-year"
+            aria-label="choose graduation year"
+            required
+          >
+            <option selected>Choose..</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <label for="roll-no-input" class="form-label">Roll No.</label>
+          <input
+            type="number"
+            class="form-control"
+            id="roll-no-input"
+            required
+          />
+        </div>
+      </div>
 
-</body>
-
+      <div class="mb-3 form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="conditions-input"
+          required
+        />
+        <label class="form-check-label" for="conditions-input"
+          >Agree to terms and conditions</label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Submit form</button>
+    </form>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
